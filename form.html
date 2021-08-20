@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        header{
+            height: 100px;
+
+        }
+        #main_menu{
+            background-color: dimgrey;
+            float: left;
+            width: 75%;
+            height: 100%;
+        }
+        #main_menu ul {
+            padding-top: 25px;
+            padding-left: 20px;
+
+        }
+         #main_menu ul li{
+            display:inline;
+            margin-right: 20px;
+        }
+        #main_menu ul li a{
+            text-decoration: none;
+            color: floralwhite;
+        }
+        #logo_img{
+            float: right;;
+            width: 25%;
+            height: 100%;
+        }
+        a:hover {
+            background-color: teal;
+        }
+        #container{
+            padding-left: 30%;
+            padding-right: 20%;
+            height: 700px;
+        }
+        #sub_container1{
+            padding-top: 0px;
+        }
+        #P_guid{
+            border: dashed lightblue;
+            background-color: rgb(204, 232, 241);
+        }
+        label{
+            background-color: rgb(204, 232, 241);
+            text-align: right;
+            width: 25%;
+            display: inline-block;
+        }
+        #ck{
+            background-color:white;
+            text-align: left;
+            width: 100%;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id=main_menu>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="iti.html">Road-Map</a>
+                </li>
+                <li>
+                    <a href="form.html">Registration Form</a>
+                </li>
+                <li>
+                    <a href="https://www.iti.gov.eg/iti">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <img id = logo_img src="ITI_logo.png" alt="ITI">
+
+    </header>
+    <div id= 'container'>
+        <h1 style="color: cornflowerblue;">Registre - Create Account</h1>
+        <div id='sub_container1'>
+            <p id = 'P_guid'>field marked with <span style="color: red;">*</span>compulsory field</p>
+        </div>
+        <form action="/action_page.php" method="get" id="form1">
+            <div style="height: 25px;">
+                <label for="fname"><span style="color: red;">*</span>Your Name</label>
+                <input type="text" id="fname" name="fname" required>     
+            </div>
+            <div style="height: 25px;">
+                <label for="email"><span style="color: red;">*</span>E-MailID</label>
+                <input type="email" id="email" name="email" required style="width: 250px;">
+            </div>
+                <div style="height: 25px;">
+                <label for="Aemail">Alternative E-MailID</label>
+                <input type="email" id="Aemail" name="Aemail"style="width: 250px;">
+            </div>
+            <div style="height: 25px;">
+                <label for="phone">Your phone</label>
+                <input type="number" id="phone" name="phone">
+            </div>
+            <div style="height: 25px;">
+                <label for="mopile phone">Mopile phone</label>
+                <input type="number" id="mopile phone" name="mopile phone">
+            </div>
+            <div style="height: 55px;">
+                <label for="postal" style="height:90%; vertical-align: top;"><span style="color: red;">*</span>your postal Adress</label>
+                <textarea id="postal" name="postal" rows="3" cols="25" required></textarea>
+            </div>
+            <div style="height: 25px;">
+                <label for="Country"><span style="color: red;">*</span>Country</label>
+                <select name="country" required style="width: 200px;">
+                    <option value="select" disabled-selected> ----------Select One----------</option>
+                    <option value="e">Egypt</option>
+                    <option value="f">France</option>
+                </select>
+            </div>
+            <div style="height: 25px;">
+                <label for="Password"><span style="color: red;">*</span>Password</label>
+                <input type="password" id="Password" name="Password" required>
+            </div>
+            <div style="height: 25px;">
+                <label for="rePassword"><span style="color: red;">*</span>Re-Enter Password</label>
+                <input type="password" id="rePassword" name="rePassword" required><br>
+            </div>
+            <div style="padding-left: 25%;">
+                <input type="checkbox">
+                <label for="ck" id="ck">I accept The <a href="https://www.iti.gov.eg/iti" style="color: blue;">Term of use</a></label><br>
+                <button type="submit" form="form1" value="Submit">Submit</button>
+                <button type="reset" value="Reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    
+    <hr>
+    <footer>
+        <p style="text-align:center; color: blue;">copy right 2021 by noha salah &reg; All rights rserved</p>
+    </footer>
+
+</body>
+</html>
