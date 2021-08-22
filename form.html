@@ -98,9 +98,20 @@
                 <label for="Aemail">Alternative E-MailID</label>
                 <input type="email" id="Aemail" name="Aemail"style="width: 250px;">
             </div>
-            <div style="height: 25px;">
-                <label for="phone">Your phone</label>
-                <input type="number" id="phone" name="phone">
+            <div style="height: 70px;">
+                <table style="width: 100%;">
+                    <tr>
+                      <th style="width: 25%; background-color: rgb(204, 232, 241);" rowspan="2"><label for="phone" style="width: 100%;">Your phone</label></th>
+                      <th style="text-align: left; width: 15%;">Country Code -</th>
+                      <th style="text-align: left; width: 15%;"> city code -</th>
+                      <th style="text-align: left; width: 45%;"> phone number</th>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%;"><input type="number" id="country_code" name="country_code" style="width: 50%;"> - </td>
+                      <td style="width: 15%;"><input type="number" id="city_code" name="city_code" style="width: 50%;"> - </td>
+                      <td style="width: 45%;"><input type="number" id="phone" name="phone"></td>
+                    </tr>
+                </table>
             </div>
             <div style="height: 25px;">
                 <label for="mopile phone">Mopile phone</label>
